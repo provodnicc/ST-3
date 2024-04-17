@@ -1,7 +1,7 @@
 // Copyright 2024 Pavel Smirnov
 #include <stdexcept>
-#include <chrono>
-#include <thread>
+#include <chrono> // NOLINT [build/c++11]
+#include <thread> // NOLINT [build/c++11]
 #include "../include/TimedDoor.h"
 
 DoorTimerAdapter::DoorTimerAdapter(TimedDoor &door) : door(door) {}

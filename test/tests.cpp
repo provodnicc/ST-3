@@ -3,8 +3,8 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include <cstdint>
-#include <chrono>
-#include <thread>
+#include <chrono> // NOLINT [build/c++11]
+#include <thread> // NOLINT [build/c++11]
 #include "../include/TimedDoor.h"
 
 class MockTimerClient : public TimerClient {
